@@ -1,0 +1,131 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyO67yzW3uSrfgxFAbAGQMcs",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/olabe3/NeuralNetworks/blob/master/zhgyak1ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "1or_uezk84DL",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "class Plant:\n",
+        "  def __init__(self,color,height):\n",
+        "    self.color = color\n",
+        "    self.height = height\n",
+        "  def kiprint(self):\n",
+        "    print (self.color)\n",
+        "    print (self.height)"
+      ],
+      "execution_count": 21,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "MOIYnpAAmdjx",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 50
+        },
+        "outputId": "11775bd0-96f3-4a4e-c97b-a27cde4f7d49"
+      },
+      "source": [
+        "rózsa = Plant(\"red\",40)\n",
+        "plant.kiprint()"
+      ],
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "red\n",
+            "45\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "H0AH3IyStrHI",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "class Flower(Plant):\n",
+        "  def is_tree(self):\n",
+        "    if self.height > 200:\n",
+        "      print(\"tree\")"
+      ],
+      "execution_count": 22,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "K6D9FFt1uUzv",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 245
+        },
+        "outputId": "a791967c-2f53-432d-9f66-695b80b00cc9"
+      },
+      "source": [
+        "almafa = Flower(\"green\", 250)\n",
+        "almafa.kiprint()\n",
+        "almafa.is_tree()\n",
+        "rózsa.is_tree()"
+      ],
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "green\n",
+            "250\n",
+            "tree\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "error",
+          "ename": "AttributeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-20-0482e4f90cba>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0malmafa\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mkiprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0malmafa\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mis_tree\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 4\u001b[0;31m \u001b[0mrózsa\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mis_tree\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mAttributeError\u001b[0m: 'Plant' object has no attribute 'is_tree'"
+          ]
+        }
+      ]
+    }
+  ]
+}
